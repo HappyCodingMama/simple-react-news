@@ -10,9 +10,11 @@ function App() {
   const [active, setActive] = useState(1);
   const [category, setCategory] = useState('general');
 
+  const PF = process.env.NEWS_API;
+
   useEffect(() => {
     fetch(
-      `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=63181c95d479494da2430a071950ede1`
+      `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${PF}`
     )
       .then((res) => res.json())
       .then((data) => setItems(data.articles));

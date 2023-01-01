@@ -1,0 +1,24 @@
+.hero-box {
+  position: relative;
+  padding: 30px;
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+
+    .titleBg {
+      margin-bottom: 1rem;
+      h1 {
+        font-size: 1rem;
+        line-height: 1.1;
+      }
+    }
+    .author {
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      span {
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.featured-grid {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  .featured-title {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  .featured-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
